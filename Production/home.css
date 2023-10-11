@@ -1,0 +1,19 @@
+.hero{
+    padding-top: var(--sectionSpacing);
+    padding-bottom: var(--sectionSpacing);
+    margin: 0;
+
+    background-color: rgb(65, 60, 55);
+    
+    color: var(--lightMain);
+}
+.hero-container{
+    width: 50%;
+}
+.hero-container *:not(:last-child){
+    margin-bottom: var(--spacing1);
+}
+
+.hero p {
+    font-size: 30px;
+}

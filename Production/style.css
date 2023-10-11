@@ -3,18 +3,22 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 img{
     background-color: aqua;
 }
 
 
-
 :root{
     --lightMain: rgb(255, 255, 255);
-    --lightheader: rgb(240, 233, 233);
+    --light2: rgb(240, 233, 233);
+    --light3: rgb(231, 226, 226);
     --darkMain: black;
-    --brown1: rgb(95, 25, 25);
+    --dark2: rgb(32, 31, 31);
+    --dark2: rgb(31, 29, 29);
+    --brown1: rgb(133, 50, 50);
     --brown2: rgb(179, 43, 43);
 
     --sidePadding: calc((10 /16 * 1rem) + ((140 - 10) * ((100vw - 320px) / (1920 - 320))));
@@ -24,10 +28,78 @@ img{
     --sectionSpacing: calc((100 /16 * 1rem) + ((200 - 100) * ((100vw - 320px) / (1920 - 320))));
     --sectionSpacingHalf: calc(var(--sectionSpacing) / 2);
 
+    --headerHeight: calc((50 /16 * 1rem) + ((75 - 50) * ((100vw - 320px) / (1920 - 320))));
+
     --spacing1: calc((30 /16 * 1rem) + ((50 - 30) * ((100vw - 320px) / (1920 - 320))));
-    --spacing2: calc(var(--spacing1) * 2);
-    --spacing3: calc(var(--spacing1) * 3);
+    --spacing2: calc(var(--spacing1) / 2);
+    --spacing3: calc(var(--spacing1) / 3);
+    --spacing4: calc(var(--spacing1) / 4);
+    --spacing5: calc(var(--spacing1) / 5);
+    --spacing6: calc(var(--spacing1) / 6);
 }
+
+
+
+
+.a-button{
+    background-color: var(--brown1);
+    color: var(--lightMain);
+    padding: var(--spacing3) var(--spacing1);
+    font-size: 22px;
+    display: block;
+    width: max-content;
+}
+
+
+/* ROBOTO FONT FACE */
+@font-face {
+    font-family: roboto-thin;
+    src: url('./assets/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: roboto-light;
+    src: url('./assets/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url('./assets/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url('./assets/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url('./assets/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: roboto-black;
+    src: url('./assets/Roboto-Black.ttf');
+}
+
+
+
+*{
+    font-family: roboto-regular;
+}
+
+h1{
+    font-family: roboto-regular;
+    font-size: 76px;
+}
+h2{
+    font-family: roboto-light;
+    font-size: 48px;
+}
+h3{
+    font-family: roboto-regular;
+    font-size: 32px;
+}
+p {
+    font-size: 20px;
+}
+
+
 
 
 body{
@@ -37,17 +109,63 @@ body{
 
 
 header{
-    background-color: var(--lightheader);
-    padding: 40px var(--sidePaddingDouble) ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    background-color: var(--light2);
+
+    padding: 0 var(--sidePaddingDouble) ;
+    height: var(--headerHeight);
     display: flex;
     justify-content: space-between;
-    
+}
+header > *{
+    margin: auto 0;
 }
 header nav a{
-    margin-left: var(--spacing1);
+    margin-left: var(--spacing2);
+
+    font-size: 18px;
+    color: var(--darkMain);
 }
 
 
 section{
+    margin-bottom: var(--sectionSpacing);
+    padding: 0 var(--sidePadding);
 }
+
+
+
+.bandEnergy{
+    background-color: var(--dark2);
+    color: var(--lightMain);
+}
+
+
+
+
+
+.card1-underBand{
+    font-size: 28px;
+    padding: var(--spacing6);
+
+    background-color: var(--light3);
+    border-bottom: solid var(--spacing5) var(--brown2);
+    border-top: solid 3px var(--darkMain);
+}
+
+
+.split2Even{
+    display: flex;
+}
+
+
+.split2Even > *{
+    flex: 1;
+}
+
+
+
