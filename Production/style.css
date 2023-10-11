@@ -1,0 +1,53 @@
+/* STYLE RESET */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    background-color: aqua;
+}
+
+
+
+:root{
+    --lightMain: rgb(255, 255, 255);
+    --lightheader: rgb(240, 233, 233);
+    --darkMain: black;
+    --brown1: rgb(95, 25, 25);
+    --brown2: rgb(179, 43, 43);
+
+    --sidePadding: calc((10 /16 * 1rem) + ((140 - 10) * ((100vw - 320px) / (1920 - 320))));
+    --sidePaddingHalf: calc(var(--sidePadding) / 2);
+    --sidePaddingDouble: calc((var(--sidePadding)) * 2);
+    
+    --sectionSpacing: calc((100 /16 * 1rem) + ((200 - 100) * ((100vw - 320px) / (1920 - 320))));
+    --sectionSpacingHalf: calc(var(--sectionSpacing) / 2);
+
+    --spacing1: calc((30 /16 * 1rem) + ((50 - 30) * ((100vw - 320px) / (1920 - 320))));
+    --spacing2: calc(var(--spacing1) * 2);
+    --spacing3: calc(var(--spacing1) * 3);
+}
+
+
+body{
+    background-color: var(--lightMain);
+    color: var(--darkMain);
+}
+
+
+header{
+    background-color: var(--lightheader);
+    padding: 40px var(--sidePaddingDouble) ;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+header nav a{
+    margin-left: var(--spacing1);
+}
+
+
+section{
+}
