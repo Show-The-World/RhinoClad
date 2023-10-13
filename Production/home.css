@@ -1,19 +1,220 @@
 .hero{
-    padding-top: var(--sectionSpacing);
-    padding-bottom: var(--sectionSpacing);
-    margin: 0;
 
-    background-color: rgb(65, 60, 55);
-    
+    background-image: url('./assets/beautiful_home_windows_doors.jpg');
     color: var(--lightMain);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+
+    padding-bottom: var(--sectionSpacing);
 }
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;    
+    left: 0;    
+    bottom: 0;    
+    right: 0;
+    z-index: -1;
+
+    backdrop-filter: blur(3px);
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;    
+    left: 0;    
+    bottom: 0;    
+    right: 0;
+    z-index: -2;
+
+    background-color: rgb(24, 23, 22);
+    opacity: 0.60;
+}
+
+
 .hero-container{
     width: 50%;
 }
-.hero-container *:not(:last-child){
+.hero-container > *:not(:last-child){
     margin-bottom: var(--spacing1);
 }
 
 .hero p {
-    font-size: 30px;
+    font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+@media screen and (max-width:500px){
+    .hero-container{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.services-subCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.services-subCard > *{
+    flex:1;
+    flex-basis: 210px;
+}
+
+
+
+
+.windows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.windows-heading h2{
+    width: 70%;
+}
+
+.windows > *:first-child{
+    margin-bottom: var(--spacing1);
+    width: 40%;
+    margin-right: var(--spacing2);
+    min-width: fit-content;
+}
+
+.windows-container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    row-gap: var(--sidePadding);
+    column-gap: 10%;
+    flex-wrap: wrap;
+}
+
+.windows-container >* {
+    /* margin-left: auto; */
+    flex: 1;
+    min-width: 220px;
+}
+
+
+
+
+.doors-container p{
+    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
+    min-width: 300px;
+}
+.doors > *:first-child{
+    margin-bottom: calc(var(--sectionSpacingHalf)*0.8);
+}
+
+.doors-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing1);
+}
+.doors-container *{
+    flex: 1;
+}
+.doors-container *:first-child{
+    margin-right: 25%;
+}
+
+
+
+
+
+.about{
+    background-image: url('./assets/window_manufacturing.jpg');
+    background-position: center 20%; 
+    background-size: cover;
+    position: relative;
+    z-index: -3;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--sidePaddingDouble) * 0.8);
+    margin-bottom: -18%;
+}
+.about-container > *{
+    min-width: 280px;
+}
+.about-container > div{
+    flex: 1;
+
+    background-color: var(--brown1);
+    color: var(--lightMain);
+}
+.about-container > img{
+    flex: 2.2;
+    width: 100%;
+
+    object-fit: cover;
+}
+.about::before{
+    content: '';
+    position: absolute;
+    top: 0;    
+    left: 0;    
+    bottom: 0;    
+    right: 0;
+    z-index: -1;
+
+    backdrop-filter: blur(8px);
+}
+.about::after{
+    content: '';
+    position: absolute;
+    top: 0;    
+    left: 0;    
+    bottom: 0;    
+    right: 0;
+    z-index: -2;
+
+    background-color: rgb(23, 26, 41);
+    opacity: 0.70;
+}
+
+.about p{
+    font-size: calc((16 /16 * 1rem) + ((26 - 16) * ((100vw - 320px) / (1920 - 320))));
+}
+
+
+
+
+.gallery{
+    padding-top: var(--sectionSpacing);
+}
+.gallery h2{
+    margin: auto;
+    margin-bottom: var(--sectionSpacingHalf);
+    width: max-content;
+}
+
+
+
+
+.testimonials-wrapper{
+    background-color: var(--lightMain);
+    padding: var(--spacing1);
+    position: relative;
+}
+
+.testimonials .card1-underBand{
+    padding: var(--spacing2);
+    background-color: var(--lightMain);
+}
+.testimonials-name{
+    margin-top: var(--spacing2);
+}
+.testimonials p{
+    margin-top: var(--spacing1);
+    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));;
+}
+.testimonials-quoteSymbol{
+    width: calc((40 /16 * 1rem) + ((50 - 40) * ((100vw - 320px) / (1920 - 320))));
 }

@@ -4,52 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rhino Clad Windows and Doors | Home Page</title>
+
+    <link rel="shortcut icon" href="/assets/logoLight.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/home.css">
 </head>
 <body>
     <header>
+        <input id="toggle" type="checkbox" class="header-toggle">
+        <label class="header-toggleButton" for="toggle"><div></div><div></div><div></div></label>
+
         <nav class="header-nav">
-            <img class="logo header-logo" src="./assets/logo.svg" alt="Rhino Clad Logo">
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/doors">Our Doors</a>
-            <a href="/windows">Our Windows</a>
-            <a href="/contact">Contact Us</a>
+            <ul>
+                <li><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></li>
+                <li><a class="flarePage" href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/doors">Our Doors</a></li>
+                <li><a href="/windows">Our Windows</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
         </nav>
 
-        <a href="" class="a-button button1">Get A Quote</a>
+        <a href="" class="a-button blockButton header-cta">Get A Quote</a>
     </header>
 
     <section class="hero">
         <div class="hero-container">
-            <h1 class="flare2">Rhino Clad<br><span class="flare1">Windows</span> and <span class="flare1">Doors</span> for Every Home</h1>
+            <h1 class="flare1">Rhino Clad<br>Windows and Doors for Every Home</h1>
             <p>Every home is unique, and so are our windows and doors. Explore a range that complements every architecture, from classic to contemporary.</p>
-            <a href="" class="a-button button1">Get A Quote</a>
+            <a href="" class="a-button blockButtonEdge blockButton">Get A Quote</a>
         </div>
     </section>
 
 
-    <div class="band"></div>
+    <div class="bandLogo"><div class="bandLogo-image"></div></div>
 
 
-    <section class="split2Even">
-        <div class="card1">
-            <img src="" alt="" class="card1-img">
-            <div class="card1-underBand">Check Out Our Window Catalog</div>
-        </div>
+    <section class="layout1">
+        <a href="./windows/" class="card1">
+            <img src="/assets/window.jpg" alt="" class="card1-img">
+            <div class="card1-underBand"><div class="card1-wrapper">Check Out Our Window Catalog</div></div>
+        </a>
 
         <div class="services-subCard">
-            <div class="card1">
-                <img src="" alt="" class="card1-img">
-                <div class="card1-underBand">Check Out Our Entry Doors</div>
-            </div>
-            <div class="card1">
-                <img src="" alt="" class="card1-img">
-                <div class="card1-underBand">Check Out Our Patio Doors</div>
-            </div>
+            <a href="/entry_doors/" class="card1">
+                <img src="/assets/entry_door.jpeg" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Check Out Our Entry Doors</div></div>
+            </a>
+            <a href="/patio_doors/" class="card1">
+                <img src="/assets/patio_door.jpeg" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Check Out Our Patio Doors</div></div>
+            </a>
         </div>
     </section>
 
@@ -58,75 +65,86 @@
         <div class="bandEnergy-container">
             <h2>Optimized For Energy Efficiency</h2>
             <p>Rhino Clad windows and doors meet the stringent Energy Star standards, ensuring you save on energy costs while enjoying robust and streamlined designs. Built for performance, crafted for style.</p>
-            <a href="" class="a-button button1">Get A Quote</a>
+            <a href="" class="a-button blockButton2 blockButton">Get A Quote</a>
         </div>
-        <img src="/assets/energyCenter.svg" alt="">
-        <img src="/assets/energyStar.svg" alt="">
+        <div class="bandEnergy-image">
+            <img class="bandEnergy-img" src="/assets/energyStar.jpg" alt="">
+
+            <!-- <img src="/assets/energyCenter.svg" alt="" class="bandEnergy-centerImg"> -->
+        </div>
     </section>
 
 
-    <section class="split2Even">
-        <h2 class="flare2">Performance Windows, Friendly Prices</h2>
+    <section class="windows">
+        <div class="windows-heading">
+            <h2 class="flare2">Performance Windows, Friendly Prices</h2>
+        </div>
         <div class="windows-container">
             <div class="card2">
                 <h3>Aluminum / Vinyl<br>Hybrid Build</h3>
                 <p>Experience the best of both worlds. Our windows blend the warmth of vinyl interiors with the rugged strength of aluminum exteriors, ensuring lasting beauty and resilience.</p>
-                <a href="" class="a-button learnMoreButton">Learn More</a>
+                <a href="" class="a-button learnMoreButton1">Learn More</a>
             </div>
 
             <div class="card2">
                 <h3>High Quality<br>High Performance</h3>
                 <p>Crafted with precision, our windows promise unparalleled quality. Every pane and frame is designed to perform, giving you peace of mind and comfort.</p>
-                <a href="" class="a-button learnMoreButton">Learn More</a>
+                <a href="" class="a-button learnMoreButton1">Learn More</a>
             </div>
 
             <div class="card2">
                 <h3>Various Styles</h3>
                 <p>Every home is unique, and so should be its windows. From awning to casement, we offer a range of styles to perfectly complement your space.</p>
-                <a href="" class="a-button learnMoreButton">Learn More</a>
+                <a href="" class="a-button learnMoreButton1">Learn More</a>
             </div>
 
             <div class="card2">
                 <h3>Combination Styles</h3>
                 <p>Mix, match, and make it yours. Our windows allow for creative combinations, letting you design a look that's as individual as your home.</p>
-                <a href="" class="a-button learnMoreButton">Learn More</a>
+                <a href="" class="a-button learnMoreButton1">Learn More</a>
             </div>
         </div>
     </section>
 
 
 
-    <section class="doors">
+    <section class="doors sectionAccent">
         <div class="doors-container">
-            <h2 class="flare2">Design Meets Durability: Custom Doors, Crafted for You</h2>
+            <h2 class="flare2">Design Meets Durability:<br>Custom Doors, Crafted for You</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
         </div>
         
-        <div class="doors-container">
+        <div class="threeSplit">
             <div class="card3">
                 <img src="" alt="" class="card3-img">
-                <div class="card4">
-                    <h2>Insert the Desired Title in Here for Future Reference</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                    <a href="" class="a-button learnMoreButton">Learn More</a>
+                <div class="card3-wrapper">
+                    <div class="card4">
+                        <h3><span class="highlight1">Insert</span> the Desired <span class="highlight1">Title</span> in Here for Future <span class="highlight1">Reference</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
+                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card3">
                 <img src="" alt="" class="card3-img">
-                <div class="card4">
-                    <h2>Insert the Desired Title in Here for Future Reference</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                    <a href="" class="a-button learnMoreButton">Learn More</a>
+                <div class="card3-wrapper">
+                    <div class="card4">
+                        <h3>Insert the <span class="highlight1">Desired</span> Title in Here for <span class="highlight1">Future</span> Reference</h3>
+                        <p>Lorem ipsum dolor sit amet. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
+                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                    </div>
                 </div>
             </div>
 
             <div class="card3">
                 <img src="" alt="" class="card3-img">
-                <div class="card4">
-                    <h2>Insert the Desired Title in Here for Future Reference</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                    <a href="" class="a-button learnMoreButton">Learn More</a>
+                <div class="card3-wrapper">
+                    <div class="card4">
+                        <h3><span class="highlight1">Insert</span> the Desired Title in <span class="highlight1">Here</span> for Future Reference</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
+                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,50 +152,70 @@
 
 
     <section class="about">
-        <img src="" alt="Rhino Clad Windows" class="about-img">
-        <div class="card4">
-            <h2>Devoted to Top-Tier Quality and Performance</h2>
-            <p>At the heart of our work is a promise to you. We blend craftsmanship with dedication, ensuring every product stands as a testament to quality and reliability. Your trust drives us, and we're committed to delivering excellence, every step of the way.</p>
-            <a href="" class="a-button learnMoreButton">Learn More</a>
+        <div class="about-container">
+            <img src="/assets/window_working.jpg" alt="Rhino Clad Windows" class="about-img">
+            <div class="card4">
+                <h2>Devoted to Top-Tier <span class="highlight1">Quality</span> and <span class="highlight1">Performance</span></h2>
+                <p>At the heart of our work is a promise to you. We blend craftsmanship with dedication, ensuring every product stands as a testament to quality and reliability. Your trust drives us, and we're committed to delivering excellence, every step of the way.</p>
+                <a href="" class="a-button learnMoreButton2">Learn More</a>
+            </div>
         </div>
     </section>
 
 
 
     <section class="gallery">
-        <h2>Some of Our Work</h2>
+        <h2 class="flare3">Some of Our Work</h2>
+        <div class="gallery-container">
+
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img1 gallery-left">
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 ">
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img1 gallery-right">
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 gallery-left">
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img1 ">
+            <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 gallery-right">
+            <!-- <img src="" alt="" class="gallery-img1">
+            <img src="" alt="" class="gallery-img2">
+            <img src="" alt="" class="gallery-img1"> -->
+        </div>
     </section>
 
 
 
 
-    <section class="testimonials">
+    <section class="testimonials sectionAccent">
         <h2>Some Words from our Customers</h2>
 
-        <div class="testimonials-container">
+        <div class="testimonials-container threeSplit">
             <div class="testimonials-card">
-                <img src="" alt="Quote Symbol" class="testimonials-quoteSymbol">
-                <p>I never realized how much of a difference quality windows and doors could make until we chose products from this company. Not only do they look stunning, but the energy savings have been noticeable. Truly a game-changer for our home.</p>
-                <div class="testimonials-profileContainer">
-                    <img src="" alt="Five Stars Logo" class="testimonials-ratingSymbol">
+                <div class="testimonials-wrapper">
+                    <img src="/assets/quote_symbol.svg" alt="Quote Symbol" class="testimonials-quoteSymbol">
+                    <p>I never realized how much of a difference quality windows and doors could make until we chose products from this company. Not only do they look stunning, but the energy savings have been noticeable. Truly a game-changer for our home.</p>
+                </div>
+                <div class="testimonials-profileContainer card1-underBand">
+                    <img src="/assets/five_star_rating.svg" alt="Five Stars Logo" class="testimonials-ratingSymbol">
                     <div class="testimonials-name">Jane D.</div>
                 </div>
             </div>
 
             <div class="testimonials-card">
-                <img src="" alt="Quote Symbol" class="testimonials-quoteSymbol">
-                <p>From the initial consultation to the final installation, the experience was seamless. The doors we selected have become the talk of our neighborhood. They're both stylish and durable. Highly recommend!</p>
-                <div class="testimonials-profileContainer">
-                    <img src="" alt="Five Stars Logo" class="testimonials-ratingSymbol">
+                <div class="testimonials-wrapper">
+                    <img src="/assets/quote_symbol.svg" alt="Quote Symbol" class="testimonials-quoteSymbol">
+                    <p>From the initial consultation to the final installation, the experience was seamless. The doors we selected have become the talk of our neighborhood. They're both stylish and durable. Highly recommend!</p>
+                </div>
+                <div class="testimonials-profileContainer card1-underBand">
+                    <img src="/assets/five_star_rating.svg" alt="Five Stars Logo" class="testimonials-ratingSymbol">
                     <div class="testimonials-name">Liam P.</div>
                 </div>
             </div>
             
             <div class="testimonials-card">
-                <img src="" alt="Quote Symbol" class="testimonials-quoteSymbol">
-                <p>We recently renovated our home and decided to go with their windows. The clarity, design, and performance have exceeded our expectations. It's evident that a lot of care and expertise goes into each product.</p>
-                <div class="testimonials-profileContainer">
-                    <img src="" alt="Five Stars Logo" class="testimonials-ratingSymbol">
+                <div class="testimonials-wrapper">
+                    <img src="/assets/quote_symbol.svg" alt="Quote Symbol" class="testimonials-quoteSymbol">
+                    <p>We recently renovated our home and decided to go with their windows. The clarity, design, and performance have exceeded our expectations. It's evident that a lot of care and expertise goes into each product.</p>
+                </div>
+                <div class="testimonials-profileContainer card1-underBand">
+                    <img src="/assets/five_star_rating.svg" alt="Five Stars Logo" class="testimonials-ratingSymbol">
                     <div class="testimonials-name">Aisha R.</div>
                 </div>
             </div>
@@ -186,7 +224,36 @@
 
 
     <footer>
-        Discover beautifully crafted doors tailored for every home at Rhino Clad. Our windows promise unmatched reliability and performance, all at unbeatable prices. Crafting Ambiance, One Door & Window at a Time.
+        <div class="footer-container">
+            <div class="footer-headingContainer">
+                <p>Discover beautifully crafted doors tailored for every home at Rhino Clad. Our windows promise unmatched reliability and performance, all at unbeatable prices. Crafting Ambiance, One Door & Window at a Time.</p>
+                <img class="footer-logo" src="/assets/logoDark.svg" alt="">
+            </div>
+            <div class="footer-linkContainer">
+                <nav class="footer-card">
+                    <h3 class="flare4">Navigation</h3>
+                    <a class="flarePage" href="/">Home</a>
+                    <a href="/about">About Us</a>
+                    <a href="/windows">Our Windows</a>
+                    <a href="/contact">Contact Us</a>
+                </nav>
+                <nav class="footer-card">
+                    <h3 class="flare4">Services</h3>
+                    <a href="/windows">Windows</a>
+                    <a href="/doors">Doors</a>
+                    <a href="/entry_doors">Entry Doors</a>
+                    <a href="/patio_doors">Patio Doors</a>
+                </nav>
+
+                <nav class="footer-card">
+                    <h3 class="flare4">Contact</h3>
+                    <a href="/contact">Get a Quote</a>
+                    <a href="/contact">Visit Us</a>
+                    <a href="/contact">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-band">Copyright 2023 Show The World. All rights reserved.</div>
     </footer>
 
 </body>

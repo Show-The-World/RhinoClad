@@ -1,0 +1,19 @@
+.doors-container p{
+    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
+    min-width: 300px;
+}
+.doors > *:first-child{
+    margin-bottom: calc(var(--sectionSpacingHalf)*0.8);
+}
+
+.doors-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing1);
+}
+.doors-container *{
+    flex: 1;
+}
+.doors-container *:first-child{
+    margin-right: 25%;
+}
