@@ -7,9 +7,6 @@
     box-sizing: border-box;
     list-style: none;
 }
-img{
-}
-
 
 :root{
     --lightMain: #ffffff;
@@ -728,6 +725,8 @@ section{
 
     display: flex;
     align-items: stretch;
+
+    display: none;
 }
 
 .bandEnergy-container{
