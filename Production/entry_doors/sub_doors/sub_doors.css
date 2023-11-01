@@ -1,0 +1,22 @@
+.subHero{
+    padding-top: var(--spacing1);
+    padding-bottom: var(--spacing1);
+
+    background-image: none;
+}
+
+.images{
+    justify-content: space-evenly;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--spacing1);
+}
+
+.images img{
+    width: 100%;
+    height: auto;
+    
+    flex: 1;
+}

@@ -13,28 +13,34 @@
 </head>
 <body>
     <header>
-        <input id="toggle" type="checkbox" class="header-toggle">
+        <input  id="toggle" type="checkbox" class="header-toggle">
         <label class="header-toggleButton" for="toggle"><div></div><div></div><div></div></label>
 
         <nav class="header-nav">
             <ul>
                 <li><a href="/" class="logo-a"><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></a></li>
-                <li><a class="flarePage" href="/">Home</a></li>
+                <li><a class="flareHeaderPage" href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/doors">Our Doors</a></li>
+                <li class="dropDownButton"><a href="/doors">Our Doors</a><label class="dropDownLabel" for="dropDown"></label><input  type="checkbox" name="dropDown" id="dropDown" class="dropDownBox">
+                    <div class="dropDownContainer">
+                        <a href="/entry_doors">Entry Doors</a>
+                        <a href="/patio_doors">Patio Doors</a>
+                    </div>
+                </li>
                 <li><a href="/windows">Our Windows</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
         </nav>
 
-        <a href="" class="a-button blockButton header-cta">Get A Quote</a>
+
+        <a href="/contact#quote" class="a-button blockButton header-cta">Get A Quote</a>
     </header>
 
     <section class="hero">
         <div class="hero-container">
             <h1 class="flare1">Rhino Clad<br>Windows and Doors for Every Home</h1>
             <p>Every home is unique, and so are our windows and doors. Explore a range that complements every architecture, from classic to contemporary.</p>
-            <a href="" class="a-button blockButtonEdge blockButton">Get A Quote</a>
+            <a href="/contact" class="a-button blockButtonEdge blockButton">Let's Get In Touch</a>
         </div>
     </section>
 
@@ -61,19 +67,6 @@
     </section>
 
 
-    <section class="bandEnergy">
-        <div class="bandEnergy-container">
-            <h2>Optimized For Energy Efficiency</h2>
-            <p>Rhino Clad windows and doors meet the stringent Energy Star standards, ensuring you save on energy costs while enjoying robust and streamlined designs. Built for performance, crafted for style.</p>
-            <a href="" class="a-button blockButton2 blockButton">Get A Quote</a>
-        </div>
-        <div class="bandEnergy-image">
-            <img class="bandEnergy-img" src="/assets/energyStar.jpg" alt="">
-
-            <img src="/assets/energyCenter.svg" alt="" class="bandEnergy-centerImg">
-        </div>
-    </section>
-
 
     <section class="windows">
         <div class="windows-heading">
@@ -83,35 +76,49 @@
             <div class="card2">
                 <h3>Aluminum / Vinyl<br>Hybrid Build</h3>
                 <p>Experience the best of both worlds. Our windows blend the warmth of vinyl interiors with the rugged strength of aluminum exteriors, ensuring lasting beauty and resilience.</p>
-                <a href="" class="a-button learnMoreButton1">Learn More</a>
+                <a href="/windows#featuresAndOptions" class="a-button learnMoreButton1">More About Hybrid Build</a>
             </div>
 
             <div class="card2">
                 <h3>High Quality<br>High Performance</h3>
                 <p>Crafted with precision, our windows promise unparalleled quality. Every pane and frame is designed to perform, giving you peace of mind and comfort.</p>
-                <a href="" class="a-button learnMoreButton1">Learn More</a>
+                <a href="/windows#performance" class="a-button learnMoreButton1">More About Quality/Performance</a>
             </div>
 
             <div class="card2">
                 <h3>Various Styles</h3>
                 <p>Every home is unique, and so should be its windows. From awning to casement, we offer a range of styles to perfectly complement your space.</p>
-                <a href="" class="a-button learnMoreButton1">Learn More</a>
+                <a href="/windows#styles" class="a-button learnMoreButton1">See Our Variety of Styles</a>
             </div>
 
             <div class="card2">
                 <h3>Combination Styles</h3>
                 <p>Mix, match, and make it yours. Our windows allow for creative combinations, letting you design a look that's as individual as your home.</p>
-                <a href="" class="a-button learnMoreButton1">Learn More</a>
+                <a href="/windows#combination" class="a-button learnMoreButton1">More About Combination Styles</a>
             </div>
         </div>
     </section>
 
 
+    <section class="bandEnergy">
+        <div class="bandEnergy-container">
+            <h2>Optimized For Energy Efficiency</h2>
+            <p>Rhino Clad windows meet the stringent Energy Star standards, ensuring you save on energy costs while enjoying robust and streamlined designs. Built for performance, crafted for style.</p>
+            <a href="/energy_effeciency" class="a-button learnMoreButton2">Learn More About Our Energy Effecient Windows</a>
+            <a href="" class="a-button blockButton2 blockButton">Request a Quote</a>
+        </div>
+        <div class="bandEnergy-image">
+            <img class="bandEnergy-img" src="/assets/energyStar.jpg" alt="">
 
-    <section class="doors sectionAccent">
-        <div class="doors-container">
+            <img src="/assets/energyCenter.svg" alt="" class="bandEnergy-centerImg">
+        </div>
+    </section>
+
+
+    <section class="l2 sectionAccent">
+        <div class="l2-container">
             <h2 class="flare2">Design Meets Durability:<br>Custom Doors, Crafted for You</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>We pride ourselves on crafting doors that not only enhance the aesthetics of your home but also stand the test of time. Whether you're exploring our robust entry doors or the seamless transition offered by our patio doors, you're choosing quality, durability, and style in one package.</p>
         </div>
         
         <div class="threeSplit">
@@ -119,9 +126,9 @@
                 <div class="card3-imgWrapper"><img src="/assets/patio_door.jpeg" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3><span class="highlight1">Insert</span> the Desired <span class="highlight1">Title</span> in Here for Future <span class="highlight1">Reference</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>Rhino Clad's <span class="highlight1">Entry Doors</span> and <span class="highlight1">Catalog</span></h3>
+                        <p>Discover the distinct features of our entry doors. Browse our catalog to find designs that suit every style and need. Rhino ensures durability paired with aesthetics."</p>
+                        <a href="/entry_doors#info" class="a-button learnMoreButton3">Our Entry Doors</a>
                     </div>
                 </div>
             </div>
@@ -130,34 +137,23 @@
                 <div class="card3-imgWrapper"><img src="/assets/entry_door.jpeg" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3>Insert the <span class="highlight1">Desired</span> Title in Here for <span class="highlight1">Future</span> Reference</h3>
-                        <p>Lorem ipsum dolor sit amet. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card3">
-                <div class="card3-imgWrapper"><img src="/assets/entry_ddfoor.jpeg" alt="" class="card3-img"></div>
-                <div class="card3-wrapper">
-                    <div class="card4">
-                        <h3><span class="highlight1">Insert</span> the Desired Title in <span class="highlight1">Here</span> for Future Reference</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>Rhino Clad's <span class="highlight1">Patio Doors</span></h3>
+                        <p>Get to know our patio doors. Designed for ease and longevity, they bridge your indoor space with the outdoors effortlessly. Rhino's commitment is clear: quality doors for every home.</p>
+                        <a href="/patio_doors" class="a-button learnMoreButton3">Our Patio Doors</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
 
     <section class="about">
         <div class="about-container">
-            <img src="/assets/window_working.jpg" alt="Rhino Clad Windows" class="about-img">
+            <img src="/assets/window_manufacturing-2.png" alt="Rhino Clad Windows" class="about-img">
             <div class="card4">
                 <h2>Devoted to Top-Tier <span class="highlight1">Quality</span> and <span class="highlight1">Performance</span></h2>
                 <p>At the heart of our work is a promise to you. We blend craftsmanship with dedication, ensuring every product stands as a testament to quality and reliability. Your trust drives us, and we're committed to delivering excellence, every step of the way.</p>
-                <a href="" class="a-button learnMoreButton2">Learn More</a>
             </div>
         </div>
     </section>
@@ -166,7 +162,9 @@
 
     <section class="gallery">
         <h2 class="flare3">Some of Our Work</h2>
-        <div class="gallery-container">
+
+        <h3 style="text-align: center;">Coming Soon</h3>
+        <!-- <div class="gallery-container">
 
             <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img1 gallery-left">
             <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 ">
@@ -174,16 +172,16 @@
             <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 gallery-left">
             <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img1 ">
             <img src="/assets/beautiful_home_windows_doors.jpg" alt="" class="gallery-img2 gallery-right">
-            <!-- <img src="" alt="" class="gallery-img1">
+            <img src="" alt="" class="gallery-img1">
             <img src="" alt="" class="gallery-img2">
-            <img src="" alt="" class="gallery-img1"> -->
-        </div>
+            <img src="" alt="" class="gallery-img1">
+        </div> -->
     </section>
 
 
 
 
-    <section class="testimonials sectionAccent">
+    <!-- <section class="testimonials sectionAccent">
         <h2>Some Words from our Customers</h2>
 
         <div class="testimonials-container threeSplit">
@@ -218,6 +216,18 @@
                     <img src="/assets/five_star_rating.svg" alt="Five Stars Logo" class="testimonials-ratingSymbol">
                     <div class="testimonials-name">Aisha R.</div>
                 </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="contactRef">
+        <div class="contactRef-container">
+            <h3>Reach Out To Us!</h3>
+            <p>Ready to transform your space? See for yourself why Rhino Clad stands unmatched in our expertise. Reach out now for a complimentary quote or to chat with our team. Your vision, our expertise—it's a perfect match.</p>
+            <div class="contactRef-subContainer">
+                <a href="/contact" class="blockButton">Contact Info</a>
+                <a href="/contact" class="blockButton">Request A Quote</a>
             </div>
         </div>
     </section>
@@ -255,6 +265,5 @@
         </div>
         <div class="footer-band">Copyright 2023 Show The World. All rights reserved.</div>
     </footer>
-
 </body>
 </html>

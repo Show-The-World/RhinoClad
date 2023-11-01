@@ -9,11 +9,11 @@
     <link rel="shortcut icon" href="/assets/logoLight.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
     <header>
-        <input checked id="toggle" type="checkbox" class="header-toggle">
+        <input  id="toggle" type="checkbox" class="header-toggle">
         <label class="header-toggleButton" for="toggle"><div></div><div></div><div></div></label>
 
         <nav class="header-nav">
@@ -21,9 +21,14 @@
                 <li><a href="/" class="logo-a"><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></a></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/doors">Our Doors</a></li>
+                <li class="dropDownButton"><a href="/doors">Our Doors</a><label class="dropDownLabel" for="dropDown"></label><input  type="checkbox" name="dropDown" id="dropDown" class="dropDownBox">
+                    <div class="dropDownContainer">
+                        <a href="/entry_doors">Entry Doors</a>
+                        <a href="/patio_doors">Patio Doors</a>
+                    </div>
+                </li>
                 <li><a href="/windows">Our Windows</a></li>
-                <li><a class="flarePage" href="/contact">Contact Us</a></li>
+                <li><a class="flareHeaderPage" href="/contact">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -38,6 +43,56 @@
     <div class="bandLogo"><div class="bandLogo-image"></div></div>
 
 
+
+    <section class="contact">
+        
+        <div class="wrapper">
+            <address class="card4">
+                <div class="subContainer">
+                    <h3>Phone Number</h3>
+                    <a href="tel:+9052913608">905 - 291 - 3608</a>
+                </div>
+                <div class="subContainer">
+                    <h3>Address</h3>
+                    <div>51 Alex Avenue, Unit #2,<br>Woodbridge, Ontario</div>
+                </div>
+                <div class="subContainer">
+                    <h3>Business Hours</h3>
+                    <div>All Days: 8am - 4pm</div>
+                </div>
+            </address>
+        </div>
+
+        <form valida>
+            <div class="inpContainer">
+                <label for="fullName">Full Name</label>
+                <input required type="text" name="fullName" id="">
+            </div>
+
+            <div class="inpContainer">
+                <label for="phone">Phone Number</label>
+                <input required type="tel" name="phone" id="">
+            </div>
+
+            <div class="inpContainer">
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="">
+            </div>
+            
+            <div class="inpContainer">
+                <label for="message">Message</label>
+                <textarea required name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="blockButton">Submit</button>
+        </form>
+    </section>
+
+    <section class="map">
+        <iframe class="mapEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539877.0348402179!2d-80.08809438552706!3d43.85438358071468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b255bb50e76d7%3A0xf023650b11628b7b!2sRhinoclad!5e0!3m2!1sen!2sca!4v1698859079917!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
     <footer>
         <div class="footer-container">
             <div class="footer-headingContainer">
@@ -50,21 +105,22 @@
                     <a href="/">Home</a>
                     <a href="/about">About Us</a>
                     <a href="/windows">Our Windows</a>
+                    <a href="/doors">Our Doors</a>
                     <a class="flarePage" href="/contact">Contact Us</a>
                 </nav>
                 <nav class="footer-card">
                     <h3 class="flare4">Services</h3>
                     <a href="/windows">Windows</a>
                     <a href="/doors">Doors</a>
-                    <a href="/entry_doors">Entry Doors</a>
-                    <a href="/patio_doors">Patio Doors</a>
+                    <a href="/entry_doors" class="footer-subButton">Entry Doors</a>
+                    <a href="/patio_doors" class="footer-subButton">Patio Doors</a>
                 </nav>
 
                 <nav class="footer-card">
                     <h3 class="flare4">Contact</h3>
                     <a href="/contact">Get a Quote</a>
                     <a href="/contact">Visit Us</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Get In Contact</a>
                 </nav>
             </div>
         </div>

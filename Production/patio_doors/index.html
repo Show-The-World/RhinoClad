@@ -9,11 +9,11 @@
     <link rel="shortcut icon" href="/assets/logoLight.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="./entry_doors.css">
+    <link rel="stylesheet" href="./patio_doors.css">
 </head>
 <body>
     <header>
-        <input checked id="toggle" type="checkbox" class="header-toggle">
+        <input  id="toggle" type="checkbox" class="header-toggle">
         <label class="header-toggleButton" for="toggle"><div></div><div></div><div></div></label>
 
         <nav class="header-nav">
@@ -21,7 +21,12 @@
                 <li><a href="/" class="logo-a"><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></a></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a class="flarePage" href="/doors">Our Patio Doors</a></li>
+                <li class="dropDownButton"><a class="" href="/doors">Our Doors</a><label class="dropDownLabel" for="dropDown"></label><input  type="checkbox" name="dropDown" id="dropDown" class="dropDownBox">
+                    <div class="dropDownContainer">
+                        <a href="/entry_doors">Entry Doors</a>
+                        <a class="flareHeaderPage" href="/patio_doors">Patio Doors</a>
+                    </div>
+                </li>
                 <li><a href="/windows">Our Windows</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
@@ -37,6 +42,49 @@
 
     <div class="bandLogo"><div class="bandLogo-image"></div></div>
 
+    <section class="layout4 sectionAccent">
+        <p>For three decades, Rhino Windows and Doors has been the trusted name in patio doors, offering both competitive pricing and unparalleled customer service. Our dedication to quality and performance sets us apart in the industry. Each patio door undergoes rigorous testing in our in-house lab, ensuring that only the finest products reach our customers. With Rhino, you're not just getting a patio door; you're investing in lasting craftsmanship and reliability.</p>
+    </section>
+
+
+    <section class="layout2">
+        <div class="layout2-container">
+            <h2 class="flare2">Patio Door Options</h2>
+            <p>Crafted with precision from the foundation upwards, our doors offer:</p>
+            <br>
+            <ul>
+                <li><p>A robust 5-7/8″ mechanical frame for enduring strength.</p></li>
+                <li><p>A securely welded sash fortified with steel.</p></li>
+                <li><p>A multi-chambered frame, enhancing stability and optimizing thermal performance.</p></li>
+                <li><p>The choice of optional aluminum sills in either sleek black or refined anodized finishes.</p></li>
+                <li><p>The flexibility of dual glazing or the enhanced insulation of triple glazing options.</p></li>
+            </ul>
+        </div>
+        <div class="layout2-wrapper"><img src="/assets/patio_details.png" alt="" class=""></div>
+    </section>
+
+
+    <section class="layout2">
+        <div class="layout2-wrapper"><img src="/assets/patio_panoramic.png" alt="" class=""></div>
+        <div class="layout2-container">
+            <h2 class="flare2">Panoramic Option</h2>
+            <p>Slide open a world of panoramic vistas with Rhino Windows and Doors' patio doors. Experience the perfect blend of elegance, style, and top-tier performance, all while basking in natural sunlight. Tailored for the Northern USA and Canadian climates, our doors also offer glass options aligned with Energy Star standards. For more details, reach out to our dedicated customer service team at Rhino Windows and Doors.</p>
+        </div>
+    </section>
+
+    
+
+    <section class="contactRef">
+        <div class="contactRef-container">
+            <h3>Reach Out To Us!</h3>
+            <p>Ready to transform your space? See for yourself why Rhino Clad stands unmatched in our expertise. Reach out now for a complimentary quote or to chat with our team. Your vision, our expertise—it's a perfect match.</p>
+            <div class="contactRef-subContainer">
+                <a href="/contact" class="blockButton">Contact Info</a>
+                <a href="/contact" class="blockButton">Request A Quote</a>
+            </div>
+        </div>
+    </section>
+
 
     <footer>
         <div class="footer-container">
@@ -50,26 +98,26 @@
                     <a href="/">Home</a>
                     <a href="/about">About Us</a>
                     <a href="/windows">Our Windows</a>
+                    <a href="/doors">Our Doors</a>
                     <a href="/contact">Contact Us</a>
                 </nav>
                 <nav class="footer-card">
                     <h3 class="flare4">Services</h3>
                     <a href="/windows">Windows</a>
                     <a href="/doors">Doors</a>
-                    <a href="/entry_doors">Entry Doors</a>
-                    <a class="flarePage" href="/patio_doors">Patio Doors</a>
+                    <a href="/entry_doors" class="footer-subButton">Entry Doors</a>
+                    <a class="flarePage" href="/patio_doors" class="footer-subButton">Patio Doors</a>
                 </nav>
 
                 <nav class="footer-card">
                     <h3 class="flare4">Contact</h3>
                     <a href="/contact">Get a Quote</a>
                     <a href="/contact">Visit Us</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Get In Contact</a>
                 </nav>
             </div>
         </div>
         <div class="footer-band">Copyright 2023 Show The World. All rights reserved.</div>
     </footer>
-
 </body>
 </html>

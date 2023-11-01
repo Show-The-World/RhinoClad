@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <input checked id="toggle" type="checkbox" class="header-toggle">
+        <input  id="toggle" type="checkbox" class="header-toggle">
         <label class="header-toggleButton" for="toggle"><div></div><div></div><div></div></label>
 
         <nav class="header-nav">
@@ -21,7 +21,12 @@
                 <li><a href="/" class="logo-a"><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></a></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a class="flarePage" href="/doors">Our Doors</a></li>
+                <li class="dropDownButton"><a class="" href="/doors">Our Doors</a><label class="dropDownLabel" for="dropDown"></label><input  type="checkbox" name="dropDown" id="dropDown" class="dropDownBox">
+                    <div class="dropDownContainer">
+                        <a class="flareHeaderPage" href="/entry_doors">Entry Doors</a>
+                        <a href="/patio_doors">Patio Doors</a>
+                    </div>
+                </li>
                 <li><a href="/windows">Our Windows</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
@@ -38,16 +43,15 @@
     <div class="bandLogo"><div class="bandLogo-image"></div></div>
 
 
-    <section class="layout4">
+    <section class="layout4 sectionAccent">
         <h2>A Showcase of Doors, A World of Possibilities</h2>
         <p>Dive into our curated collection of doors. From timeless elegance to modern flair, our entry door catalog is your guide to making a grand entrance.</p>
-        <a href="" class="a-button blockButton">Get A Quote</a>
     </section>
 
 
 
     <section class="layout3">
-        <div class="layout3-wrapper"><img src="/assets/window_installation.webp" alt="" class=""></div>
+        <div class="layout3-wrapper"><img src="/assets/entry_doors.jpeg" alt="" class=""></div>
         <div class="layout3-container">
             <h2 class="flare2">Doors That Invite and Impress Every Time</h2>
             <p>    At Rhino Clad, we understand that an entry door is more than just a barrier; it's the first impression, a statement of style, and a guardian of memories made within. Our collection of entry doors is a testament to this belief, offering a harmonious blend of design and functionality. Dive into our extensive range, and you'll find doors that cater to every aesthetic whim - from the ornate allure of decorative glass to the understated elegance of obscure options. For those seeking a touch of modernity, our commodity, blinds, and venting glass options offer a fresh perspective.
@@ -59,37 +63,34 @@
 
 
     <section class="glass">
-        <h2>Customizable Glassware</h2>
+        <h2 class="flare2">Customizable Glassware</h2>
         <div class="threeSplit">
             <div class="card3">
-                <div class="card3-imgWrapper"><img src="/assets/patio_door.jpeg" alt="" class="card3-img"></div>
+                <div class="card3-imgWrapper"><img src="/assets/glass_privacy.png" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3>Choose Your Window Privacy Level</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>Choose Your <span class="highlight1">Window Privacy</span> Level</h3>
+                        <a href="/entry_doors/glass#privacy" class="a-button learnMoreButton3">Learn About Privacy</a>
                     </div>
                 </div>
             </div>
 
             <div class="card3">
-                <div class="card3-imgWrapper"><img src="/assets/patio_door.jpeg" alt="" class="card3-img"></div>
+                <div class="card3-imgWrapper"><img src="/assets/glass_caming.png" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3>Handcrafted Metal Finishes in Every Design</h3>
-                        <p>Lorem ipsum dolor sit amet. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3><span class="highlight1">Handcrafted Metal</span> Finishes in Every Design</h3>
+                        <a href="/entry_doors/glass#caming" class="a-button learnMoreButton3">Learn About Caming</a>
                     </div>
                 </div>
             </div>
 
             <div class="card3">
-                <div class="card3-imgWrapper"><img src="/assets/patio_door.jpeg" alt="" class="card3-img"></div>
+                <div class="card3-imgWrapper"><img src="/assets/glass_variation.png" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3>A World of Glass Patterns Awaits</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>A World of <span class="highlight1">Glass Patterns</span> Awaits</h3>
+                        <a href="/entry_doors/glass#style" class="a-button learnMoreButton3">Learn About Style</a>
                     </div>
                 </div>
             </div>
@@ -98,48 +99,103 @@
 
 
     <section class="layout6 sectionAccent">
-        <h2>Our Entry Door Catalog</h2>
+        <h2 class="flare2">Our Entry Door Catalog</h2>
         
         <div class="layout6-container">
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/eastmont.html" class="card1">
+                <img src="/assets/entry_doors/eastmont.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Eastmont</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/manhattan.html" class="card1">
+                <img src="/assets/entry_doors/manhattan.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Manhattan</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/granville.html" class="card1">
+                <img src="/assets/entry_doors/granville.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Granville</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/sullivan.html" class="card1">
+                <img src="/assets/entry_doors/sullivan.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Sullivan</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/waterton.html" class="card1">
+                <img src="/assets/entry_doors/waterton.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Waterton</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/modena.html" class="card1">
+                <img src="/assets/entry_doors/modena.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Modena</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/hollister.html" class="card1">
+                <img src="/assets/entry_doors/hollister.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Hollister</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/canterbury.html" class="card1">
+                <img src="/assets/entry_doors/canterbury.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Canterbury</div></div>
             </a>
-            <a href="/windows_casement/" class="card1">
-                <img src="" alt="" class="card1-img">
+            <a href="/entry_doors/sub_doors/adelaide.html" class="card1">
+                <img src="/assets/entry_doors/adelaide.png" alt="" class="card1-img">
                 <div class="card1-underBand"><div class="card1-wrapper">Adelaide</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/artisan.html" class="card1">
+                <img src="/assets/entry_doors/artisan.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Artisan</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/harlow.html" class="card1">
+                <img src="/assets/entry_doors/harlow.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Harlow</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/niagara.html" class="card1">
+                <img src="/assets/entry_doors/niagara.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Niagara</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/everton.html" class="card1">
+                <img src="/assets/entry_doors/everton.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Everton</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/lexington.html" class="card1">
+                <img src="/assets/entry_doors/lexington.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Lexington</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/royston.html" class="card1">
+                <img src="/assets/entry_doors/royston.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Royston</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/auburn.html" class="card1">
+                <img src="/assets/entry_doors/auburn.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Auburn</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/perimeter.html" class="card1">
+                <img src="/assets/entry_doors/perimeter.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Perimeter</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/pinehurst.html" class="card1">
+                <img src="/assets/entry_doors/pinehurst.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Pinehurst</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/verona.html" class="card1">
+                <img src="/assets/entry_doors/verona.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Verona</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/riverton.html" class="card1">
+                <img src="/assets/entry_doors/riverton.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Riverton</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/star.html" class="card1">
+                <img src="/assets/entry_doors/star.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Star</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/retro_series.html" class="card1">
+                <img src="/assets/entry_doors/retro_series.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Retro Series</div></div>
+            </a>
+            <a href="/entry_doors/sub_doors/solution_series.html" class="card1">
+                <img src="/assets/entry_doors/solution_series.png" alt="" class="card1-img">
+                <div class="card1-underBand"><div class="card1-wrapper">Solution Series</div></div>
             </a>
         </div>
     </section>
-
 
 
     <section class="layout5">
@@ -166,14 +222,23 @@
     
         <div class="layout5-imgContainer">
             <div class="layout5-wrapper">
-                <img src="/assets/window_techinical_1.png" alt="">
-                <img src="/assets/window_techinical_2.png" alt="">
-                <img src="/assets/window_techinical_4.png" alt="">
-                <img src="/assets/window_techinical_3.png" alt="">
+                <img src="/assets/glass_insulation.png" alt="">
             </div>
         </div>
-    
-        </section>
+
+    </section>
+
+
+    <section class="contactRef">
+        <div class="contactRef-container">
+            <h3>Reach Out To Us!</h3>
+            <p>Ready to transform your space? See for yourself why Rhino Clad stands unmatched in our expertise. Reach out now for a complimentary quote or to chat with our team. Your vision, our expertise—it's a perfect match.</p>
+            <div class="contactRef-subContainer">
+                <a href="/contact" class="blockButton">Contact Info</a>
+                <a href="/contact" class="blockButton">Request A Quote</a>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
@@ -188,26 +253,26 @@
                     <a href="/">Home</a>
                     <a href="/about">About Us</a>
                     <a href="/windows">Our Windows</a>
+                    <a href="/doors">Our Doors</a>
                     <a href="/contact">Contact Us</a>
                 </nav>
                 <nav class="footer-card">
                     <h3 class="flare4">Services</h3>
                     <a href="/windows">Windows</a>
                     <a href="/doors">Doors</a>
-                    <a class="flarePage" href="/entry_doors">Entry Doors</a>
-                    <a href="/patio_doors">Patio Doors</a>
+                    <a class="flarePage" href="/entry_doors" class="footer-subButton">Entry Doors</a>
+                    <a href="/patio_doors" class="footer-subButton">Patio Doors</a>
                 </nav>
 
                 <nav class="footer-card">
                     <h3 class="flare4">Contact</h3>
                     <a href="/contact">Get a Quote</a>
                     <a href="/contact">Visit Us</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Get In Contact</a>
                 </nav>
             </div>
         </div>
         <div class="footer-band">Copyright 2023 Show The World. All rights reserved.</div>
     </footer>
-
 </body>
 </html>

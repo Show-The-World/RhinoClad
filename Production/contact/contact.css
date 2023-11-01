@@ -1,0 +1,105 @@
+.contact{
+    display: flex;
+}
+
+.contact > *{
+}
+
+.card4 > *:not(:last-child){
+    margin-bottom: var(--spacing1);
+}
+
+.card4{
+    width: fit-content;
+
+    margin-right: var(--sidePaddingDouble);
+
+    background-color: var(--brown1);
+}
+
+.card4 *{
+    color: var(--lightMain);
+}
+
+.card4 *{
+    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
+    font-family: roboto-regular;
+}
+
+
+.card4 h3{
+    margin-bottom: var(--spacing4);
+    font-family: roboto-regular;
+}
+
+
+
+form{
+    flex: 1;
+}
+form *{
+    font-family: roboto-regular;
+}
+
+.contact input, textarea{
+    border: solid 2px var(--dark3);
+    border-radius: 2px;
+    margin-top: var(--spacing4);
+
+    font-size: calc((16 /16 * 1rem) + ((18 - 16) * ((100vw - 320px) / (1920 - 320))));
+
+    padding: 10px;
+}
+
+.inpContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing1);
+}
+
+.contact input{
+    height: 2.4em;
+}
+textarea{
+    height: 10em;
+    resize: vertical;
+}
+
+.contact label{
+    font-family: roboto-regular;
+    font-size: calc((15 /16 * 1rem) + ((18 - 15) * ((100vw - 320px) / (1920 - 320))));
+}
+
+
+@media screen and (max-width:850px){
+    
+    .contact{
+        flex-direction: column;
+    }
+
+    .card4{
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: var(--spacing1);
+    }
+
+    .card4 > *{
+        margin: auto;
+        width: fit-content;
+    }
+}
+
+
+
+
+.map{
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mapEmbed{
+    width: 100%;
+
+    height: calc((400 /16 * 1rem) + ((650 - 400) * ((100vw - 320px) / (1920 - 320))));
+}

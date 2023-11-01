@@ -1,0 +1,25 @@
+.oneC{
+    display: flex;
+    flex-direction: column;
+
+    width: calc((280 /16 * 1rem) + ((700 - 280) * ((100vw - 320px) / (1920 - 320))));
+    align-items: center;
+
+    padding-left: calc((20 /16 * 1rem) + ((300 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-right: calc((20 /16 * 1rem) + ((300 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    width: 100%;
+}
+
+.oneC > *{
+    width: fit-content;
+}
+.oneC img{
+    margin-top: var(--spacing1);
+
+    width: 100%;
+}
+
+.oneC h2 {
+    margin-bottom: var(--spacing3);
+}

@@ -1,0 +1,4 @@
+section *{
+    list-style: decimal;
+    list-style-position: outside;
+}

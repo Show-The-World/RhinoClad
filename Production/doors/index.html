@@ -21,7 +21,12 @@
                 <li><a href="/" class="logo-a"><img class="logo header-logo" src="/assets/logoLight.svg" alt="Rhino Clad Logo"></a></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a class="flarePage" href="/doors">Our Doors</a></li>
+                <li class="dropDownButton"><a class="flareHeaderPage" href="/doors">Our Doors</a><label class="dropDownLabel" for="dropDown"></label><input  type="checkbox" name="dropDown" id="dropDown" class="dropDownBox">
+                    <div class="dropDownContainer">
+                        <a href="/entry_doors">Entry Doors</a>
+                        <a href="/patio_doors">Patio Doors</a>
+                    </div>
+                </li>
                 <li><a href="/windows">Our Windows</a></li>
                 <li><a href="/contact">Contact Us</a></li>
             </ul>
@@ -41,10 +46,10 @@
 
 
 
-    <section class="doors sectionAccent">
+    <section class="doors">
         <div class="doors-container">
             <h2 class="flare2">Design Meets Durability:<br>Custom Doors, Crafted for You</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>We pride ourselves on crafting doors that not only enhance the aesthetics of your home but also stand the test of time. Whether you're exploring our robust entry doors or the seamless transition offered by our patio doors, you're choosing quality, durability, and style in one package.</p>
         </div>
         
         <div class="threeSplit">
@@ -52,9 +57,9 @@
                 <div class="card3-imgWrapper"><img src="/assets/patio_door.jpeg" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3><span class="highlight1">Insert</span> the Desired <span class="highlight1">Title</span> in Here for Future <span class="highlight1">Reference</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>Rhino Clad's <span class="highlight1">Entry Doors</span> and <span class="highlight1">Catalog</span></h3>
+                        <p>Discover the distinct features of our entry doors. Browse our catalog to find designs that suit every style and need. Rhino ensures durability paired with aesthetics."</p>
+                        <a href="/entry_doors#info" class="a-button learnMoreButton3">Our Entry Doors</a>
                     </div>
                 </div>
             </div>
@@ -63,59 +68,40 @@
                 <div class="card3-imgWrapper"><img src="/assets/entry_door.jpeg" alt="" class="card3-img"></div>
                 <div class="card3-wrapper">
                     <div class="card4">
-                        <h3>Insert the <span class="highlight1">Desired</span> Title in Here for <span class="highlight1">Future</span> Reference</h3>
-                        <p>Lorem ipsum dolor sit amet. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card3">
-                <div class="card3-imgWrapper"><img src="/assets/entry_ddfoor.jpeg" alt="" class="card3-img"></div>
-                <div class="card3-wrapper">
-                    <div class="card4">
-                        <h3><span class="highlight1">Insert</span> the Desired Title in <span class="highlight1">Here</span> for Future Reference</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. In hac habitasse platea dictumst. Sed ullamcorper, nunc id pellentesque dilatation, arcu ex molestie ex, sit amet sollicitudin purus nisl sit a</p>
-                        <a href="" class="a-button learnMoreButton3">Learn More</a>
+                        <h3>Rhino Clad's <span class="highlight1">Patio Doors</span></h3>
+                        <p>Get to know our patio doors. Designed for ease and longevity, they bridge your indoor space with the outdoors effortlessly. Rhino's commitment is clear: quality doors for every home.</p>
+                        <a href="/patio_doors" class="a-button learnMoreButton3">Our Patio Doors</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
-
-
-
-
-    <section class="bandEnergy">
-        <div class="bandEnergy-container">
-            <h2>Optimized For Energy Efficiency</h2>
-            <p>Rhino Clad windows and doors meet the stringent Energy Star standards, ensuring you save on energy costs while enjoying robust and streamlined designs. Built for performance, crafted for style.</p>
-            <a href="" class="a-button blockButton2 blockButton">Get A Quote</a>
-        </div>
-        <div class="bandEnergy-image">
-            <img class="bandEnergy-img" src="/assets/energyStar.jpg" alt="">
-
-            <img src="/assets/energyCenter.svg" alt="" class="bandEnergy-centerImg">
-        </div>
-    </section>
-
-
+    
 
     <section class="layout1">
-        <a href="/entry_doors" class="card1">
-            <img src="" alt="" class="card1-img">
-            <div class="card1-underBand">Check Out Our Window Catalog</div>
+        <a href="/patio_doors" class="card1">
+            <img src="/assets/patio_door.jpeg" alt="" class="card1-img">
+            <div class="card1-underBand">Check Out Our Patio Doors</div>
         </a>
 
-        <a href="/patio_doors" class="card1">
-            <img src="" alt="" class="card1-img">
-            <div class="card1-underBand">Check Out Our Window Catalog</div>
+        <a href="/entry_doors#catalog" class="card1">
+            <img src="/assets/entry_door.jpeg" alt="" class="card1-img">
+            <div class="card1-underBand">Check Out Our Entry Doors Catalog</div>
         </a>
     </section>
 
 
-
-
+    <section class="contactRef">
+        <div class="contactRef-container">
+            <h3>Reach Out To Us!</h3>
+            <p>Ready to transform your space? See for yourself why Rhino Clad stands unmatched in our expertise. Reach out now for a complimentary quote or to chat with our team. Your vision, our expertise—it's a perfect match.</p>
+            <div class="contactRef-subContainer">
+                <a href="/contact" class="blockButton">Contact Info</a>
+                <a href="/contact" class="blockButton">Request A Quote</a>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -132,21 +118,22 @@
                     <a href="/">Home</a>
                     <a href="/about">About Us</a>
                     <a href="/windows">Our Windows</a>
+                    <a class="flarePage" href="/doors">Our Doors</a>
                     <a href="/contact">Contact Us</a>
                 </nav>
                 <nav class="footer-card">
                     <h3 class="flare4">Services</h3>
                     <a href="/windows">Windows</a>
                     <a class="flarePage" href="/doors">Doors</a>
-                    <a href="/entry_doors">Entry Doors</a>
-                    <a href="/patio_doors">Patio Doors</a>
+                    <a href="/entry_doors" class="footer-subButton">Entry Doors</a>
+                    <a href="/patio_doors" class="footer-subButton">Patio Doors</a>
                 </nav>
 
                 <nav class="footer-card">
                     <h3 class="flare4">Contact</h3>
                     <a href="/contact">Get a Quote</a>
                     <a href="/contact">Visit Us</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Get In Contact</a>
                 </nav>
             </div>
         </div>
